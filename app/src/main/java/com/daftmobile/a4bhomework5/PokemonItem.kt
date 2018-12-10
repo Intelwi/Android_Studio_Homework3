@@ -4,4 +4,4 @@ import android.support.annotation.ColorInt
 import java.io.Serializable;
 
 
-data class PokemonItem(val index: String, val name: String, @ColorInt val backgroundColor: Int):Serializable
+data class PokemonItem(val number: String, val name: String, @ColorInt val color: Int):Serializable

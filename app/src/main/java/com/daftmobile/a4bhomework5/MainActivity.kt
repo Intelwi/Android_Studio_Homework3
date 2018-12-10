@@ -17,10 +17,12 @@ class MainActivity : AppCompatActivity() {
 
         val viewModel = ViewModelProviders.of(this).get(PokemonViewModel::class.java)
         viewModel.newPokemon().observe(this, Observer(this::showPokemonActivity))
+
         viewModel.error().observe(this, Observer(this::showError))
 
         showInfoButton.setOnClickListener {
             viewModel.showPokemonInfo(pokedexIndexInput.text.toString())
+
         }
     }
 

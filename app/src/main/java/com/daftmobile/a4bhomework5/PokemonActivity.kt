@@ -13,7 +13,7 @@ class PokemonActivity : AppCompatActivity() {
         val intent = intent
         val pokemon = intent?.extras?.get("pokemon") as? PokemonItem
         nameView.text = pokemon?.name
-        numberView.text = pokemon?.index
-        //i obrazek jeszcze
+        numberView.text = pokemon?.number
+       // imageView.setBackgroundColor(pokemon?.color ?: 1) //NIE WIEM JAK Z TEGO WYCIAGNAC KOLOR
     }
 }
